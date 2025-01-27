@@ -39,15 +39,16 @@
 								<h1>Login</h1>
 								<p class="account-subtitle">Access to our dashboard</p>
 								
-								<form action="index.html">
+								<!-- <form action="index.html"> -->
+								<form action="" id="loginForm">
 									<div class="input-block mb-3">
 										<label class="form-control-label">Email Address</label>
-										<input type="email" class="form-control">
+										<input type="email" id="email" name="email" class="form-control">
 									</div>
 									<div class="input-block mb-3">
 										<label class="form-control-label">Password</label>
 										<div class="pass-group">
-											<input type="password" class="form-control pass-input">
+											<input type="password"  id="password" name="password"class="form-control pass-input">
 											<span class="fas fa-eye toggle-password"></span>
 										</div>
 									</div>
@@ -64,7 +65,7 @@
 											</div>
 										</div>
 									</div>
-									<button class="btn btn-lg  btn-primary w-100" type="submit">Login</button>
+									<button class="btn btn-lg btn-primary w-100" type="submit">Login</button>
 									<div class="pt-2 text-center">
 										<p> Don't have an account? <a href="signup.html">Sign up</a></p>
 									</div>
@@ -91,6 +92,7 @@
 		
 		<!-- Custom JS -->
 		<script src="assets/js/script.js" ></script>
+		<script src="../token/login.js" ></script>
 
 	</body>
 
